@@ -44,27 +44,34 @@ $(document).ready(function() {
 
 
     //% Filtering
-
-
     //# filter()
+    //$('li').filter(':even').css('background-color', 'yellow');
 
+    /* $('li').filter(function () {
+        return 10 > 3;
+    }).css('background-color', 'yellow'); */
+
+   /*  $('li').filter(function(index) {
+        console.log(index) //0, 1, 2, 3...
+        return index > 4;
+    }).css('color', 'blue'); */
 
     //# first()
-
+    //$('li').first().css('font-weight', 'bold');
 
     //# last()
-
+    //$('li').last().css('font-weight', 'bold');
 
     //# eq()
-
-
-    //# lt()
-
-
-    //# gt()
-
+    //$("li").eq(2).css("background-color", "red");
 
     //# not()
+    //('li').not(':contains("3")').css("background-color", "red");
 
+    //# lt()
+    //$('li').filter(':lt(2)').css('color', 'lime');
+
+    //# gt()
+    //$('li').filter(':gt(4)').css('color', 'blue');
 
 });
